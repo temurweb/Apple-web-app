@@ -50,6 +50,10 @@ export default function Cards() {
             <h2 className='text-[24px] font-normal'><span className='font-bold mr-1'>WATCH</span>SERIES 11</h2>
           </div>
           <p className='text-[16px] md:text-[20px]'>{t("title_7")}</p>
+          <div className='flex gap-6 pb-4 mt-2'>
+            <button className='bg-blue-600 text-white p-2 rounded-full hover:bg-blue-600/60'>{t("button_1")}</button>
+            <button className='border border-blue-600 rounded-3xl text-blue-600 p-2 hover:bg-blue-600 hover:text-white'>{t("button_3")}</button>
+          </div>
           <img src={iwatch11} alt="applewatch11" />
         </div>
       </div>
