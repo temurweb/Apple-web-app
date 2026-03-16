@@ -29,7 +29,7 @@ export default function Header() {
             <li><NavLink className={({isActive}) =>  isActive ? "text-gray-500 font-semibold" : ""} to='/airpods'>{t("Airpods")}</NavLink></li>
         </ul>
         {/* Responsive for mobile */}
-        <div className={`flex flex-col items-center absolute top-16 left-0 py-6  w-full h-screen text-[32px]  gap-10 font-bold  backdrop-blur-xl transition-transform duration- ${isExplore ? "bg-black/80 backdrop-blur-md" : "bg-white/80"} && ${open ? "translate-y-0" : "translate-y-full"}`}>
+        <div className={`flex flex-col items-center absolute top-16 left-0 py-6  w-full h-screen text-[24px]  gap-10 font-bold  backdrop-blur-xl transition-transform duration- ${isExplore ? "bg-black/80 backdrop-blur-md" : "bg-white/80"} && ${open ? "translate-y-0" : "translate-y-full"}`}>
           <ul className=''>
             <li><NavLink className={({isActive}) => isActive ? "text-gray-500 font-semibold" : ""} to='/explore'>{t("Explore")}</NavLink></li>
             <li><NavLink className={({isActive}) => isActive ? "text-gray-500 font-semibold" : ""} to='/store'>{t("Store")}</NavLink></li>
