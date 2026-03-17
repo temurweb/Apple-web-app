@@ -58,7 +58,7 @@ export default function Header() {
    
       {/* Icons */}
       <div className='md:hidden cursor-pointer' onClick={() => setOpen(!open)}>
-       {open ? <CgClose className='h-8 w-8 font-bold'/> : <FiMenu className='h-8 w-8 font-bold'/> }
+       {open ? <CgClose className='h-7 w-7 font-bold'/> : <FiMenu className='h-7 w-7 font-bold'/> }
       </div>
       </header>
     </div>
