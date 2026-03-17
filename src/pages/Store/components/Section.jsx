@@ -3,43 +3,29 @@ import iPhone17pro from '../../../assets/images/iPhone17p.png'
 import { NavLink } from 'react-router-dom'
 import iphone_air from '../../../assets/images/iphone_air.png'
 import thinnest_iphone from '../../../assets/images/thinnest_iphoneair.png'
+import iphone_models from '../../../assets/images/iphone_models.png'
+import Mac from '../../../assets/images/mac.png'
+import { useTranslation } from 'react-i18next'
 
 export default function Section() {
+  const [ t ] = useTranslation()
   return (
     <div>
-      <div className='grid justify-center mt-9'>
-        <h2 className='text-[32px] font-bold mb-2.5 text-center pt-10'>Get the latest iPhone from our store</h2>
-        <div className='flex justify-center'>
-          <img className=' mb-1 w-1xl' src={iPhone17pro} alt="iPhone 17 pro" />
-          <div className='flex flex-col'>
-            <h2 className='text-[24px] font-bold mb-4'>Price starts <span className='text-gray-500'>from 799$ to 1199$ </span></h2>
-            <div className='border border-black/50 p-6 rounded-2xl '>
-              <p className='font-bold mb-2'>iPhone 17 comes with 256 and 512gb storage, <br />
-                stronger A19 chip, 48mp camera
-              </p>
-              <div className='flex justify-center gap-4'>
-                <button className='bg-blue-600 p-2 rounded-2xl text-white'><NavLink to='/iphone'>Explore</NavLink></button>
-                <button className='bg-blue-600 p-2 rounded-2xl text-white'>Buy</button>
-              </div>
-            </div>
-            <div className='border border-black/50 p-6 mt-8 rounded-2xl'>
-            <p className='mb-2 font-bold'>iPhone 17 pro comes with Apple 19 pro chip & 12gb ram, <br />
-            6.3-inch 120hz ProMotion display, triple 48mp camera
-            </p>
-            <div className='flex justify-center gap-4'>
-              <button className='bg-blue-600 p-2 rounded-2xl text-white'><NavLink to='/iphone'>Explore</NavLink></button>
-              <button className='bg-blue-600 p-2 rounded-2xl text-white'>Buy</button>
-            </div>
-
-            </div>
+      <div className='mt-20 px-5 md:px-10'>
+        <h2 className='text-[32px] md:text-[40px] font-bold'>{t("title_8")}</h2>
+        <p className='text-[24px] font-medium md:text-[32px]'>{t("title_9")}</p>
+        <div className='flex justify-center gap-10 mt-10 mb-2'>
+          {/* Card 1 */}
+          <div className='flex flex-col items-center duration-500 hover:scale-105 hover:underline'>
+             <img className='w-24 h-24 ' src={iphone_models} alt="iphone" /> 
+             <h3 className='text-[16px] font-medium'>iPhone</h3>
+          </div>
+          {/* Card 2 */}
+          <div className='flex flex-col items-center duration-500 hover:scale-105'>
+             <img className='w-30 h-24 mb-1 ' src={Mac} alt="airpods" />
+             <h3 className='text-[8px] md:text-[16px] font-medium '>Mac</h3>
           </div>
         </div>
-      </div>
-       <div className='flex flex-col items-center'>
-              <img src={iphone_air} className='w-3xl' alt="iphone_air" />
-              <h2 className=' text-[40px] font-medium'>iPhone 17 Air</h2>
-              <p className='text-[32px] font-normal pb-4'>The thinnest iPhone ever</p>
-              <button className='bg-blue-600 text-white rounded-2xl p-2 hover:bg-blue-600/50'>Learn more</button>
       </div>
     </div>
   )
