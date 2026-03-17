@@ -13,7 +13,6 @@ export default function App() {
   return (
    <>
    <Header/>
-   <Footer/>
    <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/explore' element={<Explore/>}/>
@@ -22,6 +21,7 @@ export default function App() {
     <Route path='/store' element={<Store/>}/>
     <Route path='/airpods' element={<Airpods/>}/>
    </Routes>
+   <Footer/>
    </>
   )
 }
