@@ -1,6 +1,7 @@
 import React from 'react'
 import iPhone17pro from '../../../assets/images/iPhone17p.png'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import iphone_air from '../../../assets/images/iphone_air.png'
 import thinnest_iphone from '../../../assets/images/thinnest_iphoneair.png'
 import iphone_models from '../../../assets/images/iphone_models.png'
@@ -17,12 +18,12 @@ export default function Section() {
         <div className='flex justify-center gap-10 mt-10 mb-2'>
           {/* Card 1 */}
           <div className='flex flex-col items-center duration-500 hover:scale-105 hover:underline'>
-             <img className='w-24 h-24 ' src={iphone_models} alt="iphone" /> 
-             <h3 className='text-[16px] font-medium'>iPhone</h3>
+              <Link to='/iphone'><img className='w-24 h-24' src={iphone_models} alt="" /></Link>
+              <h3 className='text-[16px] font-medium'>iPhone</h3> 
           </div>
           {/* Card 2 */}
           <div className='flex flex-col items-center duration-500 hover:scale-105'>
-             <img className='w-30 h-24 mb-1 ' src={Mac} alt="airpods" />
+             <img className='w-32 h-24 mb-1 ' src={Mac} alt="airpods" />
              <h3 className='text-[8px] md:text-[16px] font-medium '>Mac</h3>
           </div>
         </div>
